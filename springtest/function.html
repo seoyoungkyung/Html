@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // 1. 함수호출
+        // function test(){
+        //     document.write("Hello","<br>");
+        //     document.write("Hello2","<br>");
+        // }
+
+        // test();
+
+        // 2. 익명함수
+        // let thefunc = function(){
+        //     document.write("hello");
+        // }
+
+        // thefunc();
+
+        // 3. 즉시 실행함수
+        // (function(){
+        //         let i = 0;
+        //         while(i < 10){
+        //             document.write(i++);
+        //         }
+        //     })();
+
+        let f = (
+            function(){
+                function a(){
+                    document.write("aaaaaaaa");
+                    document.write("<br>");
+                }
+
+                function b(){
+                    document.write("bbbbbbb");
+                    document.write("<br>");
+                }
+                
+                function c(){
+                    document.write("ccccccccc");
+                    document.write("<br>");
+                }
+
+                return{
+                    aa:a,
+                    bb:b,
+                    cc:c
+                }
+            }
+        )();
+
+        f.aa();
+        f.bb();
+        f.cc();
+
+    </script>
+    
+</body>
+</html>

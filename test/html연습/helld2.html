@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="search.jsp" method="post">
+        <h1>폼 테그 만들기</h1>
+        <input type="text" title="검색">
+        <input type="submit" value="전송"><br>
+        <input type="password" placeholder="비밀번호를 입력하세요!"><br>
+        이메일 : <input type="email" value="aaa@aaa.com" readonly><br>
+        <label for="address">주소</label> : 
+                        <input id="address" class="address" type="text">
+        <br>
+        나이 : <input type="color"><br>
+        이름 ㅣ <input type="reset" value="취소"><br>
+        <input type="checkbox" value="영화보기" ><br>
+        <input type="range"><br>
+       <hr>
+       
+        <select id= "class">
+            <option value = "archi">건축공학과</option>
+            <option value = "mechanic">기계공학과</option>
+            <option value = "indust">산업공학과</option>
+            <option value = "elec">전기전자공학과</option>
+            <option value = "computer">컴퓨터공학과</option>
+            <option value = "chemical">화학공학과</option>
+        </select><br>
+
+        <input type="text" id="interest" list="choices">
+        <datalist id="choices">
+        <option value="grammar" label="문법
+       "></option>
+        <option value="voca" label="어휘"></option>
+        <option value="speaking" label="회화
+       "></option>
+        <option value="listening" label="리스닝
+       "></option><br>
+
+       
+
+    </form>
+</body>
+</html>

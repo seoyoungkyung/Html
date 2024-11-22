@@ -1,0 +1,9 @@
+/*
+.a li : class a 태그 밑에 있는 모든 li태그를 선택
+.a > li : class a 태그 밑에 있는 1대 자손
+.a ~ li : class a 태그에 같은 라인 li태그 코드에 반영됨
+.a + li : class a 태그에 같은 라인에 바로 아래(1영역만) li태그 코드에 반영됨
+*/
+.a + li{
+    color: red;
+}
